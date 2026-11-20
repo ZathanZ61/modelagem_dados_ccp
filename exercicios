@@ -1,1 +1,43 @@
+CREATE TABLE Alunos (
+  id INT PRIMARY KEY,
+  nome VARCHAR(100),
+  idade INT,
+  cidade VARCHAR(50)
+);
+
+CREATE TABLE Cursos (
+  id INT PRIMARY KEY,
+  nome VARCHAR(100),
+  duracao INT
+);
+
+INSERT INTO Alunos (id,nome,idade,cidade) VALUES 
+(1, 'Marcia', 49, 'Taguatinga'),
+(2,'Paulo', 50, 'Paranoa'),
+(3, 'Claudio', 56, 'Itapoa'),
+(4, "Nathan", 33, 'Planaltina'),
+(5, 'Erika', 25, 'Luziania'),
+(6, 'Josefa', 57, 'Arapoangas'),
+(7, 'Natalia', 30, 'Vale Amanhacer'),
+(8, 'Jefferson', 31, 'Brasilinha'),
+(9, 'Aldo', 50, 'Manjolo'),
+(10, 'Alisson', 32, 'Sobradinho');
+
+INSERT INTO Cursos (id,nome,duracao) VALUES
+(1, 'Ciencia da compucao', 8),
+(2, 'Contabilidade', 8),
+(3, 'Design Grafico', 4),
+(4, 'Sistema da Informacao', 8),
+(5, 'Pedagogia', 8),
+(6, 'Analise de Sistemas', 5),
+(7, 'Matematico', 8),
+(8, 'Direito', 8),
+(9, 'Administracao', 8),
+(10, 'Engenharia de software', 8);
+
+SELECT * FROM Alunos
+LIMIT 2;
+
+SELECT * FROM Cursos 
+LIMIT 2;
 
